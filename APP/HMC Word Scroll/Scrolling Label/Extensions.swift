@@ -62,7 +62,8 @@ extension String {
     
     var averageWordLength: Double {
         //Finds the length of the average word in a string
-        let concatenatedWords="".join(self.words)
+        let joiner = ""
+        let concatenatedWords=(self.words).joinWithSeparator(joiner)
         let totalCharLength=concatenatedWords.length
         return Double(totalCharLength)/Double(self.wordCount)
     }
@@ -74,7 +75,8 @@ extension String {
     
     func findWordsBeforeIndex(index:Int) -> Int {
         //Returns the number of complete words before a certain character index
-        let index:String.Index=advance(self.startIndex,index)
+        //let index:String.Index=advance(self.startIndex,index)
+        let index:String.Index = self.startIndex.advancedBy(index)
         let substring=self.substringToIndex(index)
         return substring.wordCount-1
         //slight bug: should only return wordCount-1 when the last character is from a truncated string
@@ -136,7 +138,8 @@ extension Dictionary {
         for (key,value) in self {
             stringToReturn+="\(key): \(value), "
         }
-        stringToReturn=String(dropLast(dropLast(stringToReturn.characters)))
+        //stringToReturn=String(dropLast(dropLast(stringToReturn.characters)))
+        stringToReturn=String(stringToReturn.characters.dropLast().dropLast())
         stringToReturn+="}"
         return stringToReturn
     }
