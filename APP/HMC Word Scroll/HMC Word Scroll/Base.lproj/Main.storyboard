@@ -65,6 +65,9 @@
                                 <rect key="frame" x="430" y="553" width="165" height="70"/>
                                 <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="40"/>
                                 <state key="normal" title="Library"/>
+                                <connections>
+                                    <segue destination="dNz-zj-Nbm" kind="show" id="0o3-Uv-kde"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tR4-4O-7G9">
                                 <rect key="frame" x="464" y="616" width="97" height="50"/>
@@ -351,13 +354,50 @@
             </objects>
             <point key="canvasLocation" x="2516" y="424"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="IH6-CP-gZa">
+            <objects>
+                <viewController id="dNz-zj-Nbm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oyW-wm-7rM"/>
+                        <viewControllerLayoutGuide type="bottom" id="iBL-qa-mDY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GZk-ju-FQv">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Library" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9o6-Sv-dgS">
+                                <rect key="frame" x="135" y="61" width="286" height="154"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="70"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlP-gM-ra7">
+                                <rect key="frame" x="20" y="15" width="79" height="67"/>
+                                <state key="normal" title="Home" image="home.png"/>
+                                <connections>
+                                    <segue destination="O81-wR-fql" kind="show" id="MfC-eb-axc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fyf-G7-M8A">
+                                <rect key="frame" x="936" y="20" width="68" height="68"/>
+                                <state key="normal" title="Settings" image="settings.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbp-rS-WIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1230" y="424"/>
+        </scene>
     </scenes>
     <resources>
         <image name="home.png" width="256" height="256"/>
         <image name="settings.png" width="800" height="800"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EXd-Yy-XFh"/>
-        <segue reference="b3p-x0-DxC"/>
+        <segue reference="MfC-eb-axc"/>
+        <segue reference="BAO-qN-B9g"/>
     </inferredMetricsTieBreakers>
 </document>
