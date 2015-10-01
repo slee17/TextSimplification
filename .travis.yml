@@ -1,0 +1,22 @@
+language: objective-c  #Travis only recognizes Obj-C, Xcode will handle the fact that this is Swift
+
+# xcode and sdk versions
+osx_image: xcode7
+xcode_sdk: iphonesimulator9.0
+xcode_project: "APP/HMC Word Scroll/HMC Word Scroll.xcodeproj"
+xcode_scheme: "HMC Word Scroll"
+
+# Update any of our needed tools
+before_install:
+    - brew update
+    - brew outdated xctool || brew install xctool
+
+# Send the emails to 121 group members.
+# By default sends an email whenever the build fails, or whenever the successful
+# status changes
+notifications:
+    email:
+        recipients: 
+            - dobermiller16@cmc.edu
+            - slee17@cmc.edu
+            - msue16@cmc.edu

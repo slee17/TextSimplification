@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/hmc-simplification/TextSimplification.svg)](https://travis-ci.org/hmc-simplification/TextSimplification)
+
 # TextSimplification
 Documentation and code from the Text Simplification summer research team.
 
