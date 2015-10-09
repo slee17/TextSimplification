@@ -15,6 +15,7 @@ class IntroViewController: UIViewController {
     var idNumber:String="0"
     @IBOutlet weak var idTextFieldItem: UITextField!
     
+    
     override func viewDidLoad() {
         idTextFieldItem.text=idNumber
     }
@@ -42,4 +43,7 @@ class IntroViewController: UIViewController {
             performSegueWithIdentifier("toTestViewController",sender:nil)
         }
     }
+    
+    
+    
 }
