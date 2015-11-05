@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC383B721BEB464200069BBC /* ImportArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC383B711BEB464200069BBC /* ImportArticle.swift */; };
 		EA2130C61B4B1A1E00C492D8 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2130C31B4B1A1E00C492D8 /* IntroViewController.swift */; };
 		EA2130C71B4B1A1E00C492D8 /* MetricsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2130C41B4B1A1E00C492D8 /* MetricsViewController.swift */; };
 		EA2130C81B4B1A1E00C492D8 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2130C51B4B1A1E00C492D8 /* TestViewController.swift */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC383B711BEB464200069BBC /* ImportArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportArticle.swift; sourceTree = "<group>"; };
+		CC383B731BEBD17100069BBC /* Wikipedia.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Wikipedia.playground; sourceTree = "<group>"; };
 		EA2130C31B4B1A1E00C492D8 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		EA2130C41B4B1A1E00C492D8 /* MetricsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricsViewController.swift; sourceTree = "<group>"; };
 		EA2130C51B4B1A1E00C492D8 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC383B6F1BE9C68000069BBC /* Wikipedia */ = {
+			isa = PBXGroup;
+			children = (
+				CC383B711BEB464200069BBC /* ImportArticle.swift */,
+				CC383B731BEBD17100069BBC /* Wikipedia.playground */,
+			);
+			name = Wikipedia;
+			sourceTree = "<group>";
+		};
 		EA2130C21B4B1A1E00C492D8 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +123,7 @@
 		EAF78C2E1B448BD60051A0CE = {
 			isa = PBXGroup;
 			children = (
+				CC383B6F1BE9C68000069BBC /* Wikipedia */,
 				EA8B3F111B4B1AF400137A49 /* Texts */,
 				EA2130C91B4B1A8800C492D8 /* Scrolling Label */,
 				EA2130C21B4B1A1E00C492D8 /* View Controllers */,
@@ -274,6 +287,7 @@
 				EA2130CF1B4B1A8800C492D8 /* ScrollingLabel.swift in Sources */,
 				EA2130D01B4B1A8800C492D8 /* StopWatch.swift in Sources */,
 				EA2130C71B4B1A1E00C492D8 /* MetricsViewController.swift in Sources */,
+				CC383B721BEB464200069BBC /* ImportArticle.swift in Sources */,
 				EA2130CE1B4B1A8800C492D8 /* Extensions.swift in Sources */,
 				EA2130C61B4B1A1E00C492D8 /* IntroViewController.swift in Sources */,
 				EA2130C81B4B1A1E00C492D8 /* TestViewController.swift in Sources */,
